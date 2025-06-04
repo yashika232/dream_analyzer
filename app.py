@@ -52,3 +52,8 @@ if analyze and user_dream.strip():
     with col2:
         plot_pie(pos_ratio, neg_ratio)
         plot_bar(pos_ratio, neg_ratio)
+
+from utils.gemini_api import generate_interpretation
+
+# Later in app.py
+interpretation = generate_interpretation(user_input, matched_symbol_text)
