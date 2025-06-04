@@ -32,7 +32,7 @@ Symbols from dream dictionary:
 {matched_symbols}
 
 Now provide a detailed interpretation using  Calvin Hall’s Cognitive Theory by identifying the dominant emotion, core thought or concern, symbolic themes, focus of the dream (self or others), any cognitive conflict, the personal concern category (e.g., relationships or identity), and the overall cognitive theme.
-"""
+Give the analysis and dont behave like a llm behave like a human"""
     model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(
         combined_prompt,
